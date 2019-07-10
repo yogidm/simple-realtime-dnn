@@ -17,6 +17,10 @@ Tested in
 - Opencv 4.1.0
 
 
+Samakan dengan iki gaes...
+
+https://github.com/hsekia/learning-keras/wiki/How-to-install-Keras-to-Ubuntu-18.04
+
 ---
 Modified from [rdeepc](https://github.com/rdeepc/ExploreOpencvDnn) by [yogidm](https://github.com/yogidm)
 
