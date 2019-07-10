@@ -11,10 +11,10 @@ python3 main_realtime.py
 Selamat mecoba... :D 
 
 
-Tested in
-- Ubuntu 18.04
+Tested in Ubuntu 18.04
 - Python 3.6.8
-- Opencv 4.1.0
+- Opencv 4.1.0 `pip3 install opencv-python`
+- Numpy
 
 Tested in Windows 10
 - install Python 3.6.x (kalo 3.7 bakalan error) <b> --> Beri centang untuk Add Path Python 3.6 waktu instalasi ya... </b>
@@ -23,6 +23,7 @@ Tested in Windows 10
 ```
 pip3 install opencv-python
 ```
+- Numpy (sepaket sama instalasi `opencv-python` diatas
 - Siap digunakan. 
 
 ---
