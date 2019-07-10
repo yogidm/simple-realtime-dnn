@@ -34,6 +34,7 @@ model = cv2.dnn.readNetFromTensorflow('models/frozen_inference_graph.pb',
 
 while(True):
     ret, image=cap.read()
+    overlay=image.copy()
 
     image_height, image_width, _ = image.shape
 
@@ -52,14 +53,17 @@ while(True):
             box_y = detection[4] * image_height
             box_width = detection[5] * image_width
             box_height = detection[6] * image_height
-            cv2.rectangle(image, (int(box_x), int(box_y)), (int(box_width), int(box_height)), (23, 230, 210), thickness=2)
-            cv2.putText(image,class_name ,(int(box_x), int(box_y+.05*image_height)),cv2.FONT_HERSHEY_SIMPLEX,(1),(0, 0, 255))
+            cv2.rectangle(image, (int(box_x), int(box_y)), (int(box_width), int(box_height)), (200, 128, 0), -1)
+            cv2.putText(image,class_name ,(int(box_x), int(box_y+.05*image_height)),cv2.FONT_HERSHEY_SIMPLEX,(1),(0, 255, 255),3)
+            alpha = 0.8  # Transparency factor.
+            image_new = cv2.addWeighted(overlay, alpha, image, 1 - alpha, 0)
+            
 
 
 
 
 
-    cv2.imshow('image', image)
+    cv2.imshow('image', image_new)
 #cv2.imwrite("image_box_text.jpg",image)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
