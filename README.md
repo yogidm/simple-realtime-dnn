@@ -11,8 +11,8 @@ python3 main_realtime.py
 Selamat mecoba... :D 
 
 
-Tested in Ubuntu 18.04
-- Python 3.6.8
+Tested in Ubuntu 18.04/16.04
+- Python 3.6.8 `sudo apt-get install idle-python3.6`
 - Opencv 4.1.0 `pip3 install opencv-python`
 - Numpy
 
